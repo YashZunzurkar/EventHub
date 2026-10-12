@@ -27,7 +27,7 @@ app.use('/api/events', eventRoutes);
 app.use('/api/registrations', registrationRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Add a basic route for testing the API
+// Root / health check endpoint
 app.get('/', (req, res) => {
   res.send('Event Management API is running...');
 });
